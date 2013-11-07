@@ -47,7 +47,7 @@ public class RecipeExpansionPack {
         public static Item bucketWoodEmpty = (new ItemWoodBucket(5000, 0)).setUnlocalizedName("woodbucket").func_111206_d("recipexpack:woodbucket-e");
         public static Item bucketWoodWater = (new ItemWoodBucket(5001, Block.waterMoving.blockID)).setUnlocalizedName("woodbucketWater").setContainerItem(bucketWoodEmpty).func_111206_d("recipexpack:woodbucket-w");
         public static Item bucketWoodMilk = (new ItemWoodBucketMilk(5002)).setUnlocalizedName("woodbucketmilk").setContainerItem(bucketWoodEmpty).func_111206_d("recipexpack:woodbucket-m");
-        public static Item grassSeed = (new ItemGrassSeeds(5003)).func_111206_d("seeds_wheat");
+        public static Item grassSeed = (new ItemGrassSeeds(5003)).func_111206_d("recipexpack:grass-seeds");
         //public static Item spearIron = (new ItemSpear(5004, 384)).func_111206_d("recipexpack:spear");
         //public static Item spearIronFlying = (new ItemSpearFlying(5005, 384)).func_111206_d("recipexpack:flyingSpear");
         public static Item bucketWoodCompost6 = (new ItemCompostWooden(5006)).func_111206_d("recipexpack:woodbucket-c").setUnlocalizedName("CompostWood6");
