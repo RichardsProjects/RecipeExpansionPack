@@ -5,5 +5,5 @@ This is the official repository for the Recipe Expansion Pack Minecraft Mod. Thi
 
 Developers
 --------------
-Glorfindel22
-WarlordJones
+- Glorfindel22
+- WarlordJones
