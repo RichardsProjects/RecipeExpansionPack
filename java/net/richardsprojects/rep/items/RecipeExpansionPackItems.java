@@ -5,26 +5,34 @@ import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.richardsprojects.rep.RecipeExpansionPack;
 import net.richardsprojects.rep.References;
 
 public class RecipeExpansionPackItems {
 
 	public static Item wood_bucket;
+	public static Item wood_bucket_milk;
 
 	public static void init() {
-		wood_bucket = new ItemWoodBucket(Blocks.air)
-				.setUnlocalizedName("wood_bucket");
+		wood_bucket = new ItemWoodBucket(Blocks.air);
+		wood_bucket_milk = new ItemWoodBucketMilk();
 	}
 
 	public static void register() {
 		GameRegistry.registerItem(wood_bucket, wood_bucket.getUnlocalizedName()
 				.substring(5));
+		GameRegistry.registerItem(wood_bucket_milk, wood_bucket_milk
+				.getUnlocalizedName().substring(5));
 	}
 
 	public static void registerRenders() {
 		registerRender(wood_bucket);
+		registerRender(wood_bucket_milk);
 	}
 
+	// TODO: Implement Cake recipe but with wood buckets of milk
+	// TODO: Make it so you can right click a cow with a wood bucket and get a bucket of milk
+	
 	public static void registerRender(Item item) {
 		Minecraft
 				.getMinecraft()

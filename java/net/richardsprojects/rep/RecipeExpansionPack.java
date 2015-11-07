@@ -15,6 +15,8 @@ public class RecipeExpansionPack {
 	@SidedProxy(clientSide = References.CLIENT_PROXY_CLASS, serverSide = References.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
 	
+	public static final RecipeExpansionPackTab repTab = new RecipeExpansionPackTab();
+	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		RecipeExpansionPackItems.init();
