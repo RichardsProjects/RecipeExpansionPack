@@ -30,8 +30,6 @@ public class RecipeExpansionPackItems {
 		registerRender(wood_bucket_milk);
 	}
 
-	// TODO: Implement Cake recipe but with wood buckets of milk
-	// TODO: Make it so you can right click a cow with a wood bucket and get a bucket of milk
 	
 	public static void registerRender(Item item) {
 		Minecraft

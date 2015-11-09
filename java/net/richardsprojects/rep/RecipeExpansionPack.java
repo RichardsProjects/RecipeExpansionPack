@@ -1,5 +1,6 @@
 package net.richardsprojects.rep;
 
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -17,10 +18,19 @@ public class RecipeExpansionPack {
 	
 	public static final RecipeExpansionPackTab repTab = new RecipeExpansionPackTab();
 	
+	// TODO: Implement Cake recipe but with wood buckets of milk
+	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		// Register Items		
 		RecipeExpansionPackItems.init();
 		RecipeExpansionPackItems.register();
+		
+		// Register Recipes
+		Recipes.register();
+		
+    	// Register Event Handlers
+    	MinecraftForge.EVENT_BUS.register(new MCForgeModEvents());
 	}
 	
 	@EventHandler
