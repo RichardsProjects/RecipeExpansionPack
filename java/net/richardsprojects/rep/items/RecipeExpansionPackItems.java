@@ -12,10 +12,12 @@ public class RecipeExpansionPackItems {
 
 	public static Item wood_bucket;
 	public static Item wood_bucket_milk;
+	public static Item wood_bucket_water;
 
 	public static void init() {
 		wood_bucket = new ItemWoodBucket(Blocks.air);
 		wood_bucket_milk = new ItemWoodBucketMilk();
+		wood_bucket_water = new ItemWoodBucketWater(Blocks.water);
 	}
 
 	public static void register() {
@@ -23,11 +25,14 @@ public class RecipeExpansionPackItems {
 				.substring(5));
 		GameRegistry.registerItem(wood_bucket_milk, wood_bucket_milk
 				.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(wood_bucket_water, wood_bucket_water
+				.getUnlocalizedName().substring(5));
 	}
 
 	public static void registerRenders() {
 		registerRender(wood_bucket);
 		registerRender(wood_bucket_milk);
+		registerRender(wood_bucket_water);
 	}
 
 	
