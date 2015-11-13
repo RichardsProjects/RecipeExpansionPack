@@ -10,13 +10,18 @@ import net.richardsprojects.rep.items.RecipeExpansionPackItems;
 public class Recipes {
 
 	public static void register() {
-		
+
 		// Wooden Bucket Recipe
 		// TODO: Implement support for all other types of wood planks
 		GameRegistry.addRecipe(new ItemStack(
 				RecipeExpansionPackItems.wood_bucket), "x x", "y y", " y ",
 				'x', new ItemStack(Items.stick), 'y', new ItemStack(
 						Blocks.planks));
+
+		// Grass Recipe
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.grass),
+				new ItemStack(RecipeExpansionPackItems.grass_seeds),
+				new ItemStack(Blocks.dirt));
 	}
 
 }

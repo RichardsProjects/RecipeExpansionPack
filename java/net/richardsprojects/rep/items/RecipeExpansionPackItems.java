@@ -13,11 +13,13 @@ public class RecipeExpansionPackItems {
 	public static Item wood_bucket;
 	public static Item wood_bucket_milk;
 	public static Item wood_bucket_water;
+	public static Item grass_seeds;
 
 	public static void init() {
 		wood_bucket = new ItemWoodBucket(Blocks.air);
 		wood_bucket_milk = new ItemWoodBucketMilk();
 		wood_bucket_water = new ItemWoodBucketWater(Blocks.water);
+		grass_seeds = new ItemGrassSeeds();
 	}
 
 	public static void register() {
@@ -27,15 +29,17 @@ public class RecipeExpansionPackItems {
 				.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(wood_bucket_water, wood_bucket_water
 				.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(grass_seeds, grass_seeds.getUnlocalizedName()
+				.substring(5));
 	}
 
 	public static void registerRenders() {
 		registerRender(wood_bucket);
 		registerRender(wood_bucket_milk);
 		registerRender(wood_bucket_water);
+		registerRender(grass_seeds);
 	}
 
-	
 	public static void registerRender(Item item) {
 		Minecraft
 				.getMinecraft()

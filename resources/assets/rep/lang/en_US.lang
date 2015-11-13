@@ -1,4 +1,6 @@
+itemGroup.tabRecipeExpansionPack=Recipe Expansion Pack
+
 item.wood_bucket.name=Wooden Bucket
 item.wood_bucket_milk.name=Milk Bucket
 item.wood_bucket_water.name=Water Bucket
-itemGroup.tabRecipeExpansionPack=Recipe Expansion Pack
+item.grass_seeds.name=Grass Seeds
