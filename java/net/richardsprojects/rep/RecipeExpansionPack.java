@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.richardsprojects.rep.blocks.RecipeExpansionPackBlocks;
 import net.richardsprojects.rep.items.RecipeExpansionPackItems;
 import net.richardsprojects.rep.proxy.CommonProxy;
 
@@ -18,11 +19,13 @@ public class RecipeExpansionPack {
 	
 	public static final RecipeExpansionPackTab repTab = new RecipeExpansionPackTab();
 	
-	// TODO: Implement Cake recipe but with wood buckets of milk
+	// TODO: Add an event that returns empty buckets when you make cake using wooden buckets
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		// Register Items		
+		// Register Items & Blocks
+		RecipeExpansionPackBlocks.init();
+		RecipeExpansionPackBlocks.register();
 		RecipeExpansionPackItems.init();
 		RecipeExpansionPackItems.register();
 		

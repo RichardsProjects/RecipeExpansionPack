@@ -22,6 +22,12 @@ public class Recipes {
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.grass),
 				new ItemStack(RecipeExpansionPackItems.grass_seeds),
 				new ItemStack(Blocks.dirt));
+		
+		// Cake Recipe
+		GameRegistry.addRecipe(new ItemStack(Items.cake), "aaa", "bcb", "ddd",
+				'a', new ItemStack(RecipeExpansionPackItems.wood_bucket_milk),
+				'b', new ItemStack(Items.sugar), 'c', new ItemStack(Items.egg),
+				'd', new ItemStack(Items.wheat));
 	}
 
 }

@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "type=white": { "model":"rep:woodFlagPoleFlagWhite" },
+        "type=orange": { "model":"rep:woodFlagPoleFlagOrange" },
+        "type=magenta": { "model":"rep:woodFlagPoleFlagMagenta" },
+        "type=light_blue": { "model":"rep:woodFlagPoleFlagLightBlue" },
+        "type=yellow": { "model":"rep:woodFlagPoleFlagYellow" },
+        "type=lime": { "model":"rep:woodFlagPoleFlagLime" },
+        "type=pink": { "model":"rep:woodFlagPoleFlagPink" },
+        "type=gray": { "model":"rep:woodFlagPoleFlagGray" },
+        "type=light_gray": { "model":"rep:woodFlagPoleFlagLightGray" },
+        "type=cyan": { "model":"rep:woodFlagPoleFlagCyan" },
+        "type=purple": { "model":"rep:woodFlagPoleFlagPurple" },
+        "type=blue": { "model":"rep:woodFlagPoleFlagBlue" },
+        "type=brown": { "model":"rep:woodFlagPoleFlagBrown" },
+        "type=green": { "model":"rep:woodFlagPoleFlagGreen" },
+        "type=red": { "model":"rep:woodFlagPoleFlagRed" },
+        "type=black": { "model":"rep:woodFlagPoleFlagBlack" }     
+    }
+}
